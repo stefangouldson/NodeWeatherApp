@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://image.freepik.com/free-photo/clear-background-moisture-nature-cloudscape_1232-3933.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#page{
+    height: 99vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#title{
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+#info{
+    background-color:transparent;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+    width: 100%;
+}
+
+.sub-head{
+    text-decoration: underline;
+    font-style: italic;
+    justify-content: flex-start;
+}
+
+#input-box{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 1%;
+}
+
+#input{
+    color: black;
+    border: solid 1px;
+    margin-right: 1%;
+    padding: 1%;
+}
+
+#but{
+    background-color: aliceblue;
+    border: none;
+}
+
+#but:hover{
+    background-color: aqua
+}
+
+#but:active{
+    transform: translateY(2px);
+}
+
+@media only screen and (min-width:700px){
+    #page{
+        font-size: 180%;
+        height: 100vh
+    }
+    #info{
+        width: auto;
+    }
+    #input{
+        font-size: 150%;
+    }
+}
