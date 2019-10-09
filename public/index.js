@@ -13,7 +13,7 @@ button.addEventListener("click", async ()=>{
     summary.textContent="Loading"
     rain.textContent="Loading"
 
-    let response=await fetch(`http://localhost:3002/weather?location=${input.value}`)
+    let response=await fetch(`/weather?location=${input.value}`)
     let data = await response.json();
     loc.textContent=data.place
     temp.textContent=`The temperature is ${data.temp}°C`

@@ -1,4 +1,5 @@
 const express =require("express");
+const port = process.env.PORT || 3002
 const path =require("path");
 const {main}=require("./app")
 
@@ -10,6 +11,6 @@ app.get("/weather", async (req,res)=>{
     res.send(data);
 })
 
-app.listen(3002,()=>{
-    console.log("listening on 3002")
+app.listen(port,()=>{
+    console.log(`listening on ${port}`)
 })
